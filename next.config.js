@@ -39,6 +39,7 @@ const nextConfig = {
     domains: ["gdurl.com", "lh3.googleusercontent.com"],
   },
   swcMinify: true,
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
