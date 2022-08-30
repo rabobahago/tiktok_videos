@@ -1,13 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: "/api/:path*",
-  //       destination: "http://localhost:3000/:path*",
-  //     },
-  //   ];
-  // },
   async headers() {
     return [
       {
@@ -17,7 +9,7 @@ const nextConfig = {
           { key: "Access-Control-Allow-Credentials", value: "true" },
           {
             key: "Access-Control-Allow-Origin",
-            value: "*",
+            value: "https://tiktok-videos.vercel.app/",
           },
           {
             key: "Access-Control-Allow-Methods",
@@ -39,7 +31,6 @@ const nextConfig = {
     domains: ["gdurl.com", "lh3.googleusercontent.com"],
   },
   swcMinify: true,
-  trailingSlash: true,
 };
 
 module.exports = nextConfig;
